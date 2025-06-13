@@ -21,28 +21,47 @@ git push
       crossorigin="anonymous"
     />
 
-<!-- NEXT UP: GÖR EN BASIC NAVBAR FÖR ALLA SKÄRMAR SOM INTE ÄR STORA -->
+    <!-- NEXT UP: GÖR EN BASIC NAVBAR FÖR ALLA SKÄRMAR SOM INTE ÄR STORA -->
 
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <!-- PC navbar -->
+    <nav class="navbar-desktop">
+      <ul class="nav-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="#">perks</a></li>
+        <li><a href="#">book your trial</a></li>
+      </ul>
 
-        <ul class="nav-links">
-            <li><a href="index.html">home</a></li>
-            <li><a href="#">perks</a></li>
-            <li><a href="#">book your trial</a></li>
+      <!-- LOGO -->
+      <h1 id="logo">
+        <a href="index.html">
+          <span class="line">Academia</span>
+          <span class="line">Ferrea</span>
+        </a>
+      </h1>
+    </nav>
+
+    <!-- mobile / tablet navbar -->
+    <nav class="navbar-mobile">
+      <input type="checkbox" id="menu-toggle" hidden />
+      <label for="menu-toggle" class="navburger">☰</label>
+
+      
+        <ul class="nav-links menu">
+          <li><a href="index.html">home</a></li>
+          <li><a href="#">perks</a></li>
+          <li><a href="#">book your trial</a></li>
         </ul>
-
-        <!-- LOGO -->
-        <h1 id="logo">
-            <a href="index.html">
-                <span class="line">Academia</span>
-                <span class="line">Ferrea</span>
-            </a>
-        </h1>
-        
-
+      
+      <!-- LOGO -->
+      <h1 id="logo">
+        <a href="index.html">
+          <span class="line">Academia</span>
+          <span class="line">Ferrea</span>
+        </a>
+      </h1>
     </nav>
 
     <!-- scripts and whips -->

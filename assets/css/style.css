@@ -1,73 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
-  margin: 0;
-  background-color:#0b0c0d;
+:root {
+  --dark: rgba(48, 48, 48, 0.5);
+  --darker: #0b0c0d;
+  --content: rgb(233, 231, 216);
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-  position: relative;
+body {
+  margin: 0;
+  background-color: var(--darker);
 }
 
 .nav-links {
-  display: flex;
-  list-style: none;
-  gap: 200px;
-  margin: 0;
-  padding: 0;
+    list-style: none;
 }
 
 .nav-links li a {
-    position: relative;
   text-decoration: none;
-  color: rgb(233, 231, 216);
+  color: var(--content);
   font-family: poppins, sans-serif;
-}
-
-/* sick hover effect for my li's because this is definately what I should be focusing on */
-.nav-links li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 100%;
-    height: 2px;
-    background-color: rgb(233, 231, 216);
-    transform: scaleX(0);
-    transform-origin: middle;
-    transition: transform 0.3s ease;
-}
-
-.nav-links li a:hover::after {
-    transform: scaleX(1);
 }
 
 #logo {
   position: absolute;
   right: 1rem;
   top: 2.5rem;
-    font-family: 'Bebas Neue', sans-serif;
 }
 
 #logo a {
     text-decoration: none;
     text-align: end;
-    color: rgb(233, 231, 216);
+    color: var(--content);
+    font-family: 'Bebas Neue', sans-serif;
 }
 
-#logo a:hover {
-    color: black;
-    transition-duration: 5s;
-}
-
+/* semantically correct "br" for logo design */
 .line {
     display: block;
 }
 
+/* navbar for mobile (default) */
+
+.navbar-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.navburger {
+  font-size: 72px;
+  color: var(--content);
+  cursor: pointer;
+  margin-top: 1%;
+  margin-left: 1rem;
+}
+
+/* styling the appearing menu for mobile */
+
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: var(--dark);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 72%;
+  margin: 0 14%;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  border-top: 1px solid var(--darker);
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+  text-align: center;
+}
+
+.menu li a {
+  display: block;
+  padding: 12px;
+}
+
+.menu li a:hover {
+  background-color: rgba(233, 231, 216, 0.5)
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  display: flex;
+}
+
+/* mobile-first, meaning we hide the pc-navbar by default */
+.navbar-desktop {
+  display: none;
+}
 
 /* media queries */
 
@@ -80,10 +112,61 @@ body {
 
 /* large devices (992px and up) */
 @media screen and (min-width: 992px) {
-  #logo {
-    right: 4rem;
+
+  .navbar-mobile {
+    display: none;
   }
-}
+
+  .navbar-desktop {
+    display: block;
+  }
+
+  .navbar-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  position: relative;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 200px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li a {
+    position: relative;
+  }
+
+/* sick hover effect for my li's because this is definately what I should be focusing on */
+  .nav-links li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 2px;
+      background-color: var(--content);
+      transform: scaleX(0);
+      transform-origin: middle;
+      transition: transform 0.3s ease;
+  }
+
+  .nav-links li a:hover::after {
+      transform: scaleX(1);
+  }
+
+  #logo a:hover {
+      color: var(--darker);
+      transition-duration: 5s;
+  }
+
+  #logo {
+      right: 4rem;
+    }
+  }
 
 /* xl devices (1200px and up) */
 @media screen and (min-width: 1200px) {

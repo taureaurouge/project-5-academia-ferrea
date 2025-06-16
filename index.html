@@ -2,7 +2,7 @@
 <html lang="en">
   <!-- 
 git add .
-git commit -m "000"
+git commit -m "repsonsive landing page completed"
 git push
 -->
   <head>
@@ -43,7 +43,7 @@ git push
       </h1>
     </nav>
 
-    <!-- mobile / tablet navbar -->
+    <!-- mobile / tablet navbar (after pc even though it's the default which is a little backwards) -->
     <nav class="navbar-mobile">
       <input type="checkbox" id="menu-toggle" hidden />
       <label for="menu-toggle" class="navburger">☰</label>
@@ -63,6 +63,39 @@ git push
         </a>
       </h1>
     </nav>
+
+    <!-- cta-heading -->
+    <header id="header-home">
+      <div class="contianer">
+        <h1 class="display-1">
+          <a href="index.html#booking">are you ready for: <strong>your fucking adventure?</strong></h1></a>
+      </div>
+    </header>
+
+    <main>
+      <section id="landing" class="container section my-4">
+        <div class="row justify-content-between">
+          <div class="col-12 col-md-6 position-relative p-0 overflow-hidden">
+            <video autoplay muted loop playsinline class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+              <source src="assets/img/Indexmainvid.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-12 col-md-5 mt-4 mt-md-0">
+            <div id="landing-p">
+              <p class="lead">Academia Ferrea is the community based, ultra high-end gymnasium you thought was too good to be true.</p>
+              <p class="lead">Our mission is to elevatre your experience. To always strive to reach new heights. To forge a culture</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="perks" class="container section my-4">
+        <div class="row">
+          <div></div>
+        </div>
+      </section>
+    </main>
 
     <!-- scripts and whips -->
     <script

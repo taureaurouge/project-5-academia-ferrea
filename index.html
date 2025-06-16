@@ -2,7 +2,7 @@
 <html lang="en">
   <!-- 
 git add .
-git commit -m "finjusteringar"
+git commit -m "footer and form added + final completion"
 git push
 -->
   <head>
@@ -11,7 +11,11 @@ git push
     <title>Academia Ferrea | Home Page</title>
 
     <meta name="description" content="ange description här!" />
-    <!-- lägg till favicon här -->
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
 
     <!-- bootstrap -->
     <link
@@ -31,7 +35,7 @@ git push
       <ul class="nav-links">
         <li><a href="index.html">home</a></li>
         <li><a href="index.html#perks">perks</a></li>
-        <li><a href="#">book your trial</a></li>
+        <li><a href="index.html#booking">register for a trial</a></li>
       </ul>
 
       <!-- LOGO -->
@@ -51,8 +55,8 @@ git push
       
         <ul class="nav-links menu">
           <li><a href="index.html">home</a></li>
-          <li><a href="#">perks</a></li>
-          <li><a href="#">book your trial</a></li>
+          <li><a href="index.html#perks">perks</a></li>
+          <li><a href="index.html#booking">register for a trial</a></li>
         </ul>
       
       <!-- LOGO -->
@@ -68,7 +72,7 @@ git push
     <header id="header-home">
       <div class="contianer">
         <h1 class="display-1">
-          <a href="index.html#booking">are you ready for: <strong>your fucking adventure?</strong></h1></a>
+          <a href="index.html#booking">Time to switch things up - you in?</h1></a>
       </div>
     </header>
 
@@ -84,8 +88,8 @@ git push
           </div>
           <div class="col-12 col-md-5 mt-4 mt-md-0">
             <div id="landing-p" class="p-2">
-              <p class="lead">Academia Ferrea is the community based, ultra high-end gymnasium you thought was too good to be true.</p>
-              <p class="lead">Our mission is to enhance your experience, continually aiming for new heights and cultivating a lasting culture.</p>
+              <p class="lead">Academia Ferrea is the fabled forge of strength you suspected was too good to exist—a haven where discipline meets camaraderie, and excellence is the baseline, not the goal. It stands not merely as a gym, but as a testament to what training can become when shaped by purpose and community.</p>
+              <p class="lead">Our ambition is to transcend the ordinary—to refine the physical, uplift the spirit, and cultivate a culture not bound by trend but built to endure. This is not just a place to train; it is a place to become.</p>
             </div>
           </div>
         </div>
@@ -128,8 +132,109 @@ git push
         </div>
       </section>
       <hr>
-      <section></section>
+      <!-- form; apply for trials -->
+      <section id="booking" class="container section my-4 mb-5">
+        <h2 class="text-center display-3">do you have what it takes to be apart of academia ferrea?</h2>
+        <p class="text-center">Our gym academy stands for excellence, and entry begins with a few important trials—starting here. Fill out this form and show us what you're made of.</p>
+        <form class="formapply mt-5" action="thankyou.html" method="GET">
+          <div class="form-group">
+            <label for="fullname">Name as it appears on official documents:</label><br>
+            <input id="name" name="name" type="text" placeholder="Hulk Hogan" required>
+          </div>
+          <div class="form-group">
+            <label for="age">Years you've been around:</label><br>
+            <input id="age" name="age" type="number" placeholder="Be honest!" required>
+          </div>
+          <div class="form-group">
+            <label for="phonenumber">Contact number:</label><br>
+            <input id="phonenumber" name="phonenumber" type="number" placeholder="(+00) 000 000 00" required>
+          </div>
+          
+          <div class="form-group mb-4">
+            <label for="message">What makes you a worthy candidate?</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" placeholder="Tell us something exciting!" required></textarea>
+          </div>
+            <button type="submit">Apply</button>
+        </form>
+      </section>
     </main>
+    <hr>
+
+    <!-- footer with opening hours, location and contact details -->
+    <footer id="contact" class="mt-auto">
+      <div class="container section">
+        <div class="row justify-content-between">
+
+          <div class="col-12 col-md-6 col-xl-6 text-center">
+            <h3>Reach us</h3>
+            <address>
+              <i class="fa-solid fa-location-dot"></i>
+              Citadelle Fork<br />
+              000 Strandvagen<br />
+              Frankfurt, 000
+            </address>
+            <p>
+              <i class="fa-solid fa-phone"></i> 000 000 0000<br />
+              <i class="fa-solid fa-paper-plane"></i>
+              mail2mail@hotmail.com
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-6">
+            <h3 class="text-center">Opening times</h3>
+
+            <table class="table table-transparent">
+              <thead>
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">Open</th>
+                  <th scope="col">Close</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Mon</th>
+                  <td>00:00</td>
+                  <td>23:59</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tue</th>
+                  <td>00:00</td>
+                  <td>23:59</td>
+                </tr>
+                <tr>
+                  <th scope="row">Wed</th>
+                  <td>00:00</td>
+                  <td>23:59</td>
+                </tr>
+                <tr>
+                  <th scope="row">Thu</th>
+                  <td>00:00</td>
+                  <td>23:59</td>
+                </tr>
+                <tr>
+                  <th scope="row">Fri</th>
+                  <td>00:00</td>
+                  <td>23:59</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sat</th>
+                  <td>00:00</td>
+                  <td>23:59</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sun</th>
+                  <td>00:00</td>
+                  <td>23:59</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </footer>
+
 
     <!-- scripts and whips -->
     <script
@@ -141,5 +246,17 @@ git push
       src="https://kit.fontawesome.com/801d34c81f.js"
       crossorigin="anonymous"
     ></script>
+
+      <script>
+    
+      const menuLinks = document.querySelectorAll('.navbar-mobile .menu li a');
+      const menuToggle = document.getElementById('menu-toggle');
+
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          menuToggle.checked = false;
+        });
+      });
+    </script>
   </body>
 </html>

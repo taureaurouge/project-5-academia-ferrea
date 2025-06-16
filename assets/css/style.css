@@ -9,6 +9,7 @@
 body {
   margin: 0;
   background-color: var(--darker);
+  font-family: poppins, sans-serif;
 }
 
 h1,
@@ -39,6 +40,8 @@ p {
 
 hr {
   color: var(--content);
+  margin: 2rem auto;
+  width: 90%;
 }
 
 .nav-links {
@@ -86,6 +89,13 @@ hr {
   cursor: pointer;
   margin-top: 1%;
   margin-left: 1rem;
+}
+
+.navbar-mobile {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0e0e0e6e;
 }
 
 /* styling the appearing menu for mobile */
@@ -143,7 +153,7 @@ hr {
 
 #landing p {
   text-align: center;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 #landing-p {
@@ -184,7 +194,74 @@ hr {
   background: url(../img/perk7.png) center / cover no-repeat;
 }
 
+#booking label {
+  color: var(--content);
+  font-family: poppins, sans-serif;
+}
 
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 24px;
+  transition: border-color 1s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--dark);
+  outline: none;
+}
+
+button {
+  background-color: var(--dark);
+  color: var(--content);
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #251e1e;
+}
+
+.tysm {
+  margin: 15%;
+}
+
+footer {
+  color: var(--content);
+}
+
+.table-transparent,
+.table-transparent thead,
+.table-transparent tbody,
+.table-transparent th,
+.table-transparent td {
+  background-color: transparent !important;
+  color: var(--content);
+  border-color: var(--content);
+}
+
+footer address {
+  letter-spacing: 2px;
+  padding: 75px 0;
+}
 
 /* media queries */
 
@@ -201,7 +278,6 @@ hr {
   .perkbox {
     margin: 2rem;
   }
-
 }
 
 /* large devices (992px and up) */

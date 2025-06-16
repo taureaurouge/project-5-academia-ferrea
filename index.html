@@ -2,7 +2,7 @@
 <html lang="en">
   <!-- 
 git add .
-git commit -m "tested and completed"
+git commit -m "tested, completed aswell as additional comments added for clarity"
 git push
 -->
   <head>
@@ -24,11 +24,11 @@ git push
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous">
 
-    <!-- NEXT UP: GÖR EN BASIC NAVBAR FÖR ALLA SKÄRMAR SOM INTE ÄR STORA -->
-
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
+
+    <!-- here follows 2 different navbars where one is disabled and the other activated depending on the screensize -->
     <!-- PC navbar -->
     <nav class="navbar-desktop">
       <ul class="nav-links">
@@ -77,7 +77,8 @@ git push
     </header>
 
     <main>
-      <!-- landing page -->
+      <!-- landing page --> 
+       <!-- been using bootstrap for its grid properties -->
       <section id="landing" class="container section my-4">
         <div class="row justify-content-between">
           <div class="col-12 col-md-6 position-relative p-0 overflow-hidden">
@@ -132,7 +133,7 @@ git push
         </div>
       </section>
       <hr>
-      <!-- form; apply for trials -->
+      <!-- form; apply for trials, again bootstrap but almost only the grid functions -->
       <section id="booking" class="container section my-4 mb-5">
         <h2 class="text-center display-3">do you have what it takes to be apart of academia ferrea?</h2>
         <p class="text-center">Our gym academy stands for excellence, and entry begins with a few important trials—starting here. Fill out this form and show us what you're made of.</p>
@@ -161,6 +162,7 @@ git push
     <hr>
 
     <!-- footer with opening hours, location and contact details -->
+     <!-- bootstrap grid and table -->
     <footer id="contact" class="mt-auto">
       <div class="container section">
         <div class="row justify-content-between">
@@ -247,8 +249,9 @@ git push
       crossorigin="anonymous"
     ></script>
 
-      <script>
-    
+
+    <!-- script for automatically closing the sticky navbar on mobile -->
+      <script>    
       const menuLinks = document.querySelectorAll('.navbar-mobile .menu li a');
       const menuToggle = document.getElementById('menu-toggle');
 

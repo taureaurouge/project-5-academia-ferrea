@@ -153,6 +153,7 @@ hr {
 .perkbox {
   border: 1px solid var(--content);
   padding: 12px;
+  margin: 2rem;
 }
 
 #perk1 {
@@ -197,6 +198,10 @@ hr {
   height: 47rem;
   }
 
+  .perkbox {
+    margin: 2rem;
+  }
+
 }
 
 /* large devices (992px and up) */
@@ -229,7 +234,7 @@ hr {
   }
 
   #landing .col-md-6 {
-  height: 32rem;
+  height: 35rem;
 }
 
   /* sick hover effect for my li's because this is definately what I should be focusing on */

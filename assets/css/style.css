@@ -11,10 +11,16 @@ body {
   background-color: var(--darker);
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: "Bebas Neue", sans-serif;
-  text-align: center;
   text-transform: uppercase;
+  color: var(--content);
+}
+
+h1 {
+  text-align: center;
 }
 
 h1 a {
@@ -31,6 +37,10 @@ p {
   font-family: poppins, sans-serif;
 }
 
+hr {
+  color: var(--content);
+}
+
 .nav-links {
   list-style: none;
 }
@@ -39,6 +49,7 @@ p {
   text-decoration: none;
   color: var(--content);
   font-family: poppins, sans-serif;
+  text-transform: lowercase;
 }
 
 #logo {
@@ -138,6 +149,40 @@ p {
 #landing-p {
   border: 1px solid var(--content);
 }
+
+.perkbox {
+  border: 1px solid var(--content);
+  padding: 12px;
+}
+
+#perk1 {
+  background: url(../img/perk1.png) center / cover no-repeat;
+}
+
+#perk2 {
+  background: url(../img/perk2.png) center / cover no-repeat;
+}
+
+#perk3 {
+  background: url(../img/perk3.png) center / cover no-repeat;
+}
+
+#perk4 {
+  background: url(../img/perk4.png) center / cover no-repeat;
+}
+
+#perk5 {
+  background: url(../img/perk5.png) center / cover no-repeat;
+}
+
+#perk6 {
+  background: url(../img/perk6.png) center / cover no-repeat;
+}
+
+#perk7 {
+  background: url(../img/perk7.png) center / cover no-repeat;
+}
+
 
 
 /* media queries */

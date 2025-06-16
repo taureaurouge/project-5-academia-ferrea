@@ -55,13 +55,13 @@ hr {
   text-transform: lowercase;
 }
 
-#logo {
+.logo {
   position: absolute;
   right: 1rem;
   top: 2.5rem;
 }
 
-#logo a {
+.logo a {
   text-decoration: none;
   text-align: end;
   color: var(--content);
@@ -267,7 +267,7 @@ footer address {
 
 /* medium devices (768px and up) */
 @media screen and (min-width: 768px) {
-  #logo {
+  .logo {
     right: 2rem;
   }
 
@@ -331,12 +331,12 @@ footer address {
     transform: scaleX(1);
   }
 
-  #logo a:hover {
+  .logo a:hover {
     color: var(--darker);
     transition-duration: 5s;
   }
 
-  #logo {
+  .logo {
     right: 4rem;
   }
 
@@ -347,14 +347,14 @@ footer address {
 
 /* xl devices (1200px and up) */
 @media screen and (min-width: 1200px) {
-  #logo {
+  .logo {
     right: 6rem;
   }
 }
 
 /* xxl devices (1400px and up) */
 @media screen and (min-width: 1400px) {
-  #logo {
+  .logo {
     right: 10rem;
   }
 }
